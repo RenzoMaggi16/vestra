@@ -1,0 +1,232 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #111;
+  border-radius: 16px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 500px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.modal-close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #888;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #f8e36b;
+}
+
+.form-select {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1rem;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23888' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #f8e36b;
+}
+
+.btn {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #f8e36b;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background-color: #f5d742;
+}
+
+.btn-primary:disabled {
+  background-color: #a99a47;
+  cursor: not-allowed;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.error-message {
+  background-color: rgba(255, 61, 113, 0.2);
+  color: #ff3d71;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+
+/* Add these styles to your existing TransactionModal.css */
+
+.transaction-type-selector {
+  display: flex;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #333;
+}
+
+.transaction-type-btn {
+  flex: 1;
+  padding: 0.8rem;
+  border: none;
+  background-color: #1a1a1a;
+  color: #888;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.transaction-type-btn.active {
+  background-color: #f8e36b;
+  color: #000;
+}
+
+.search-input-container {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.form-control {
+  padding-left: 2.5rem;
+}
+
+.search-results {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.search-result-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.search-result-item:hover {
+  background-color: #222;
+}
+
+.search-result-ticker {
+  font-weight: 600;
+}
+
+.search-result-price {
+  color: #888;
+}
+
+.search-result-change {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.search-result-change.positive {
+  background-color: rgba(0, 200, 83, 0.2);
+  color: #00c853;
+}
+
+.search-result-change.negative {
+  background-color: rgba(255, 61, 113, 0.2);
+  color: #ff3d71;
+}
+
+.transaction-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.transaction-summary-label {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.transaction-summary-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+}

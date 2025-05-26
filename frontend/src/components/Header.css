@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border-bottom: 1px solid #222;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+  color: #f8e36b;
+}
+
+.logo-container h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #f8e36b;
+}
+
+.search-container {
+  position: relative;
+  flex: 1;
+  max-width: 500px;
+  margin: 0 2rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.7rem 1rem 0.7rem 2.5rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.search-input::placeholder {
+  color: #555;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #555;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+}
+
+.header-action-item {
+  margin-left: 1.5rem;
+  font-size: 1.2rem;
+  color: #888;
+  cursor: pointer;
+  position: relative;
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f8e36b;
+  color: #000;
+  font-size: 0.7rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-avatar {
+  margin-left: 1.5rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.user-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.portfolio-summary {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-value, .portfolio-change {
+  margin-left: 2rem;
+  text-align: right;
+}
+
+.portfolio-value h2, .portfolio-change h3 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #a0a0b9;
+  margin: 0 0 0.3rem 0;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.change {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.positive {
+  color: #00c853;
+}
+
+.negative {
+  color: #ff3d71;
+}
